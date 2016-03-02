@@ -25,6 +25,10 @@ test('my thing should work', function *(t) {
 
 There's not a lot of documentation because that's really all there is to it. `test.only/test.skip` will still work as normal.
 
+## Why not just use AVA?
+
+Mostly because [ava doesn't work in browsers yet](https://github.com/sindresorhus/ava/issues/24).
+
 ## License
 
 MIT
