@@ -1,0 +1,24 @@
+{
+  "name": "tape-co",
+  "description": "Generator interface for tape",
+  "repository": "git://github.com/ashaffer/tape-co.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "make build",
+    "postpublish": "make clean",
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "tape": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-tape-runner": "^2.0.1",
+    "tape": "^4.2.0"
+  }
+}
