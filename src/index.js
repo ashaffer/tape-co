@@ -21,6 +21,10 @@ test.skip = function skip (name, fn) {
   return tape.skip(name, wrap(fn))
 }
 
+test.onFinish = function onFinish (fn) {
+  return tape.onFinish(co.wrap(fn))
+}
+
 test.createStream = tape.createStream.bind(tape)
 
 /**
